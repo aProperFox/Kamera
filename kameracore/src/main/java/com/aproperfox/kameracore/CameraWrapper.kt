@@ -1,4 +1,8 @@
 package com.aproperfox.kameracore
 
-class CameraWrapper {
+interface CameraWrapper {
+  fun takePicture()
+  fun startPreview()
+  fun toggleFlash(): Boolean
+  fun stopPreview()
 }
